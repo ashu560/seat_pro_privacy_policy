@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seato Pro – Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Seato Pro, a reading-room/library management app by Techno Amaze." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220;            /* deep indigo */
+      --card:#0f172a;          /* slate-900 */
+      --muted:#94a3b8;         /* slate-400 */
+      --text:#e2e8f0;          /* slate-200 */
+      --brand:#60a5fa;         /* blue-400 */
+      --accent:#22d3ee;        /* cyan-400 */
+      --ring:#93c5fd;          /* blue-300 */
+      --ok:#34d399;            /* emerald-400 */
+      --warn:#f59e0b;          /* amber-500 */
+      --danger:#f87171;        /* rose-400 */
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%}
+    body{
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;
+      background: radial-gradient(1200px 800px at 10% -10%,rgba(96,165,250,.15),transparent),
+                  radial-gradient(1000px 600px at 110% -20%,rgba(34,211,238,.12),transparent),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    .container{
+      max-width:1100px;
+      padding:32px 20px 80px;
+      margin-inline:auto;
+    }
+    header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:blur(10px);
+      background:linear-gradient( to bottom, rgba(15,23,42,.85), rgba(15,23,42,.55));
+      border-bottom:1px solid rgba(148,163,184,.15);
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:16px;padding:14px 20px;max-width:1100px;margin:auto;
+    }
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .logo{
+      width:36px;height:36px;border-radius:12px;
+      background:linear-gradient(135deg,var(--brand),var(--accent));
+      box-shadow:0 6px 20px rgba(96,165,250,.35);
+    }
+    .brand h1{font-size:18px;margin:0;font-weight:800;letter-spacing:.2px}
+    .chip{font-size:12px;color:#0b1220;background:var(--accent);padding:4px 10px;border-radius:999px;font-weight:700}
+
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-top:26px}
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));
+      border:1px solid rgba(148,163,184,.12);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero .card{padding:28px}
+    h2{margin:0 0 10px;font-size:28px;font-weight:800}
+    p.lead{color:var(--muted);margin:0 0 12px}
+
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .badge{font-size:12px;border:1px solid rgba(148,163,184,.2);padding:6px 10px;border-radius:999px;color:var(--muted)}
+
+    .toc{padding:22px}
+    .toc h3{margin:0 0 12px;font-size:16px;color:#cbd5e1}
+    .toc ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+    .toc a{display:block;text-decoration:none;color:var(--text);background:rgba(96,165,250,.08);padding:10px 12px;border-radius:10px;border:1px solid rgba(96,165,250,.2)}
+    .toc a:hover{border-color:var(--ring)}
+
+    main{margin-top:30px;display:grid;gap:16px}
+    section.policy{
+      padding:24px 22px;
+      scroll-margin-top:80px;
+    }
+    section.policy h3{margin-top:0;font-size:22px}
+    section.policy p,section.policy li{color:#cbd5e1}
+
+    details{background:rgba(255,255,255,.02);border:1px solid rgba(148,163,184,.12);border-radius:14px;padding:14px 16px}
+    details+details{margin-top:10px}
+    summary{cursor:pointer;font-weight:700}
+
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(148,163,184,.22);border-radius:999px;padding:6px 10px;margin-right:8px;font-size:12px;color:#cbd5e1}
+    .pill small{opacity:.8}
+
+    .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.toc ul{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
+
+    footer{margin-top:40px;padding:20px;text-align:center;color:var(--muted)}
+    .note{font-size:12px;color:#9ca3af;margin-top:8px}
+    a{color:#bfdbfe}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#top">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Seato Pro</h1>
+      </a>
+      <span class="chip">Privacy Policy</span>
+    </div>
+  </header>
+
+  <div class="container" id="top">
+    <div class="hero">
+      <div class="card">
+        <h2>Privacy Policy</h2>
+        <p class="lead">Effective date: <strong id="effective">September 7, 2025</strong></p>
+        <p class="lead">Techno Amaze ("we", "our", or "us") operates <em>Seato Pro</em>, a reading-room / library seat-management app used by reading room owners to manage rooms, seats, student subscriptions, and collections. This Privacy Policy describes what data we collect, why we collect it, how we use and share it, and the choices you have.</p>
+        <div class="badges">
+          <span class="badge">Complies with Google Play User Data policy</span>
+          <span class="badge">Covers Firebase services used</span>
+          <span class="badge">Plain-language + detailed</span>
+        </div>
+        <p class="note">If you do not agree with this policy, please do not use Seato Pro. For questions, contact us at <a href="mailto:info@technoamaze.in">info@technoamaze.in</a>.</p>
+      </div>
+      <aside class="card toc" aria-label="On this page">
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="#scope">1. Scope & Audience</a></li>
+          <li><a href="#data-we-collect">2. Data We Collect</a></li>
+          <li><a href="#how-we-use">3. How We Use Data</a></li>
+          <li><a href="#sharing">4. Sharing & Disclosures</a></li>
+          <li><a href="#retention">5. Retention</a></li>
+          <li><a href="#security">6. Security</a></li>
+          <li><a href="#children">7. Children</a></li>
+          <li><a href="#your-rights">8. Your Rights & Choices</a></li>
+          <li><a href="#transfers">9. International Transfers</a></li>
+          <li><a href="#changes">10. Changes to this Policy</a></li>
+          <li><a href="#contact">11. Contact Us</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <main>
+      <section id="scope" class="policy card">
+        <h3>1. Scope & Audience</h3>
+        <p>Seato Pro is designed for reading room/library owners and their staff (e.g., coordinators) to manage study rooms and paid seating. The app is <strong>not a reading app</strong> for students. Owners may enter and manage student information related to seat allocation and subscription billing.</p>
+        <p>This policy applies to the Seato Pro Android app, Seato Pro web features (if any), and our website pages that link to this policy.</p>
+      </section>
+
+      <section id="data-we-collect" class="policy card">
+        <h3>2. Data We Collect</h3>
+        <p>We collect data that you provide directly, data generated by your use of the app, and limited data from third-party services we integrate. The exact data stored depends on how each owner uses Seato Pro.</p>
+
+        <details open>
+          <summary>2.1 Account & Identification Data</summary>
+          <ul>
+            <li>Owner & Coordinator accounts: name, email, phone (optional), profile photo (optional), role/permissions, associated owner UID.</li>
+            <li>Authentication identifiers from Firebase Authentication (e.g., UID, provider info such as Google/Microsoft/Apple if used).</li>
+            <li>Business details provided by owners (library name, address, room names/types).</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>2.2 Student & Subscription Data (entered by owners)</summary>
+          <ul>
+            <li>Student profile: name, phone, email (if provided), seat/room assignment, roll/seat number, enrollment dates, status (active/expired/new), admission history.</li>
+            <li>Subscription & fee records: plan, start/end dates, amount, discounts, payment status, payment mode (cash/UPI/other), receipt numbers, PDF receipts, reminders sent.</li>
+            <li>Seat management: occupancy, shared-seat indicators, seat change history, notes.</li>
+            <li>Documents/images uploaded by the owner (e.g., student photo/ID if collected by the owner).</li>
+          </ul>
+          <p class="note">Owners are responsible for obtaining any necessary permissions/consents from students to store their information in Seato Pro.</p>
+        </details>
+
+        <details>
+          <summary>2.3 App Usage & Device Data</summary>
+          <ul>
+            <li>Device information: device model, OS version, app version, language, and basic diagnostics.</li>
+            <li>Identifiers: Firebase Installation ID, FCM token for push notifications.</li>
+            <li>Logs & crash reports via Firebase Crashlytics (when enabled).</li>
+            <li>Analytics events via Google Analytics for Firebase (when enabled) — aggregated and de-identified for product improvement.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>2.4 Communication Data</summary>
+          <ul>
+            <li>Emails we send (e.g., payment receipts) and your replies.</li>
+            <li>WhatsApp reminders: when you tap the WhatsApp action, the app opens WhatsApp with a pre-filled message to the selected student; the message content may be logged within your app history but is <em>sent via WhatsApp</em>.</li>
+            <li>In-app notifications and push tokens.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>2.5 QR Code & External Links</summary>
+          <ul>
+            <li>Each user/owner may generate a unique QR code that links to a record in Firebase. Scanning the code fetches data according to your configured access controls (RBAC).</li>
+            <li>External links (e.g., payment gateways, WhatsApp) are governed by those services’ privacy policies.</li>
+          </ul>
+        </details>
+      </section>
+
+      <section id="how-we-use" class="policy card">
+        <h3>3. How We Use Data</h3>
+        <div class="grid-2">
+          <ul>
+            <li>Authenticate users and authorize role-based access (owner, coordinator).</li>
+            <li>Create and manage rooms, seats, and student records, including shared seats.</li>
+            <li>Track subscriptions, renewals, expirations, monthly collections, and financial summaries.</li>
+            <li>Generate and share receipts and reports (including PDFs and email attachments).</li>
+            <li>Send reminders/notifications (in-app/push; optional WhatsApp deep links).</li>
+          </ul>
+          <ul>
+            <li>Maintain backups/archives where configured (e.g., backup_students collection).</li>
+            <li>Improve reliability, security, and performance (analytics, crash reports).</li>
+            <li>Prevent abuse, troubleshoot issues, and enforce our terms.</li>
+            <li>Respond to legal requests and comply with applicable laws.</li>
+          </ul>
+        </div>
+        <p class="pill"><strong>Legal bases</strong> <small>consent, contract, legitimate interests, compliance with law</small></p>
+      </section>
+
+      <section id="sharing" class="policy card">
+        <h3>4. Sharing & Disclosures</h3>
+        <p>We do <strong>not</strong> sell personal data. We share data only as described:</p>
+        <ul>
+          <li><strong>Service providers (processors):</strong> Google Firebase services (Authentication, Firestore, Cloud Storage, Cloud Messaging, Crashlytics, Analytics). Data is processed to operate the app.</li>
+          <li><strong>Email & Notification services:</strong> Email sending for receipts; Firebase Cloud Messaging for push notifications.</li>
+          <li><strong>Payment processors (if used):</strong> UPI apps or gateways such as Razorpay/Stripe/others chosen by owners. We store minimal payment references needed for receipts; sensitive payment data is handled by the processor.</li>
+          <li><strong>Third‑party apps via deep links:</strong> WhatsApp or similar when owners initiate messages to students.</li>
+          <li><strong>Legal, safety, and rights:</strong> We may disclose information to comply with laws, legal process, or to protect rights, property, users, or the public.</li>
+        </ul>
+      </section>
+
+      <section id="retention" class="policy card">
+        <h3>5. Data Retention</h3>
+        <p>We retain data for as long as needed to provide Seato Pro and for legitimate purposes (audit, security, legal). Owners can delete or export their student records. Backups and generated documents (e.g., receipts) may persist in logs or archived storage for a reasonable period unless you delete them.</p>
+        <p>If an owner deletes a student record, previously generated fee summaries or receipts may remain for accounting integrity as configured by the owner.</p>
+      </section>
+
+      <section id="security" class="policy card">
+        <h3>6. Security</h3>
+        <ul>
+          <li>Seato Pro uses Firebase Authentication and Firestore security rules with role-based access controls (RBAC).</li>
+          <li>Data in transit uses HTTPS/TLS; Firebase provides encryption at rest.</li>
+          <li>Access to production data is restricted to authorized personnel.</li>
+          <li>No method of transmission or storage is 100% secure; we strive to protect your data using industry-standard practices.</li>
+        </ul>
+      </section>
+
+      <section id="children" class="policy card">
+        <h3>7. Children & Student Information</h3>
+        <p>Seato Pro is intended for use by reading room owners and staff. Where owners input information about their student customers, owners are responsible for ensuring they have lawful grounds and any required consents (e.g., from the student or guardian where applicable under local law). We do not knowingly collect data directly from children under 13.</p>
+      </section>
+
+      <section id="your-rights" class="policy card">
+        <h3>8. Your Rights & Choices</h3>
+        <p>Subject to applicable laws (including India’s Digital Personal Data Protection Act, 2023), you may have rights to access, correct, update, or delete your data, withdraw consent where processing is based on consent, and raise a grievance.</p>
+        <ul>
+          <li><strong>Account owners:</strong> Use in‑app features to edit or delete records; contact us for account deletion.</li>
+          <li><strong>Students:</strong> Please contact your reading room owner (data controller for your record). You may also contact us and we will coordinate with the owner.</li>
+          <li><strong>Push notifications:</strong> You can disable notifications at the device OS level or in app settings (where available).</li>
+        </ul>
+        <p>To submit a request, email <a href="mailto:privacy@technoamaze.in">privacy@technoamaze.in</a>. We may verify your identity before responding.</p>
+      </section>
+
+      <section id="transfers" class="policy card">
+        <h3>9. International Data Transfers</h3>
+        <p>Firebase may process and store data in data centers located outside your country. By using Seato Pro, you consent to the transfer of information to countries that may have different data protection rules than your country. We rely on contractual and technical safeguards provided by our service providers.</p>
+      </section>
+
+      <section id="changes" class="policy card">
+        <h3>10. Changes to this Policy</h3>
+        <p>We may update this Privacy Policy from time to time. We will post the updated version here and update the “Effective date.” Material changes may be communicated in‑app or via email.</p>
+      </section>
+
+      <section id="contact" class="policy card">
+        <h3>11. Contact Us</h3>
+        <p><strong>Techno Amaze</strong><br>
+          Email: <a href="mailto:info@technoamaze.in">info@technoamaze.in</a><br>
+          Website: <a href="https://technoamaze.in" target="_blank" rel="noopener">https://technoamaze.in</a>
+        </p>
+        <p class="note">For grievances related to personal data, please use the subject line: “Seato Pro – Privacy Request”.</p>
+      </section>
+
+      <section class="policy card" aria-label="Helpful details for Google Play reviewers">
+        <h3>Appendix: Product & Integrations</h3>
+        <details open>
+          <summary>Firebase Services</summary>
+          <ul>
+            <li>Authentication (Email/Password, Google/Microsoft/Apple where enabled)</li>
+            <li>Cloud Firestore (primary database), Cloud Storage (files/receipts/images)</li>
+            <li>Cloud Messaging (push notifications), Crashlytics (crash reporting), Analytics (usage analytics)</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Key App Features Covered by this Policy</summary>
+          <ul>
+            <li>Add/manage study rooms and seats (including shared seat support)</li>
+            <li>Add/manage students and monthly subscriptions</li>
+            <li>Expired subscriber lists and renewal reminders (including WhatsApp deep links)</li>
+            <li>Receipt generation & sharing (PDF/email), monthly collection dashboards & charts</li>
+            <li>Coordinator logins with limited access (RBAC)</li>
+            <li>Reports (owner-level and student-level), backups/archives where configured</li>
+            <li>QR code links to records with access controlled by your configured rules</li>
+          </ul>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Techno Amaze. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // set current year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
